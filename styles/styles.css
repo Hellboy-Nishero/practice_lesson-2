@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+
+.banner{
+    width: 1600px;
+    height: 1400px;
+    margin: 0 auto;
+    background-color: #A7D7C5;
+    position: relative;
+}
+
+
+.banner img:nth-of-type(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.banner img:nth-of-type(2){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.registration{
+    position: absolute;
+    top: 131px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 698px;
+    height: 900px;
+    border-radius: 49.09px;
+    background-color: #f6fbf9;
+    padding: 40px 0 20.41px 0;
+}
+
+
+.heading h1{
+    font-weight: 700;
+    font-size: 55.23px;
+    line-height: 71.79px;
+    margin-bottom: 20px;
+    color: #212B27;
+}
+.heading p{
+    width: 472.49px;
+    font-size: 23.01px;
+    line-height: 29.91px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30.46px;
+    color: #32403B;
+}
+
+
+.email, .password{
+    width: 575.27px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1.53px solid #0000001A;
+    outline: none;
+    padding-left: 31px;
+    font-size: 23.01px;
+    line-height: 19.5px;
+    margin-bottom: 20px;
+}
+
+
+.fullName{
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-gap: 16px;
+}
+.name, .lastName{
+    height: 60px;
+    border-radius: 15px;
+    border: 1.53px solid #0000001A;
+    outline: none;
+    padding-left: 31px;
+    font-size: 23.01px;
+    line-height: 19.5px;
+    margin-bottom: 20px;
+}
+
+
+.phoneNumber, .accountType{
+    width: 575.27px;
+    margin-bottom: 20px;
+}
+.phoneNumber h2, .accountType h2{
+    font-weight: 400;
+    font-size: 23.01px;
+    line-height: 19.5px;
+    margin-bottom: 20px;
+    color: #32403B;
+}
+.phoneInputs{
+    display: grid;
+    grid-template-columns: 120px 437px;
+    grid-gap: 16px;
+}
+.countryCode, .phone{
+    height: 60px;
+    border-radius: 15px;
+    border: 1.53px solid #0000001A;
+    outline: none;
+    padding-left: 31px;
+    font-size: 23.01px;
+    line-height: 19.5px;
+}
+
+
+.radiobtns{
+    display: flex;
+    justify-content: space-around;
+}
+.radiobtns input{
+    position: absolute;
+    top: 68.4%;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+.radiobtns input:nth-of-type(1){
+    left: 63px;
+}
+.radiobtns input:nth-of-type(2){
+    left: 229px;
+}
+.radiobtns input:nth-of-type(3){
+    left: 447px;
+}
+.radiobtns label{
+    font-weight: 400;
+    font-size: 23.01px;
+    line-height: 19.5px;
+    color: #32403B;
+    position: relative;
+}
+.radiobtns label::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    border: 1px solid #00000059;
+    border-radius: 100%;
+    transform: translateY(-50%);
+}
+.radiobtns label::after{
+    opacity: 0;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #84C7AE;
+    position: absolute;
+    left: -56px;
+    top: 50%;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    transition: opacity .4s ease-in-out;
+}
+input:checked + label::after{
+    opacity: 1;
+}
+
+
+button{
+    margin-top: 30px;
+    background-color: #84C7AE;
+    padding: 24.66px 73.59px 33.24px 72.59px;
+    border: none;
+    border-radius: 23.01px;
+    font-size: 33.75px;
+    font-weight: 700;
+    line-height: 43.87px;
+    color: #fff;
+    transition: all .4s ease-in-out;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #6492f3;
+    color: #405caa;
+}
+
+
+.signIn{
+    font-weight: 400;
+    font-size: 21.48px;
+    line-height: 27.92px;
+}
+.signIn a{
+    color: #32403B;
+}

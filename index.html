@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <section class="banner">
+        <img src="media/Rectangle 8.svg">
+        <img src="media/Rectangle 7.svg">
+    </section>
+    <content class="registration" method="post" action="#">
+        <form>
+            <div class="heading">
+                <h1>Create An Account</h1>
+                <p>Create an account to enjoy all the services without any ads for free!</p>
+            </div>
+            <input type="email" class="email" placeholder="Email Adress">
+            <input type="password" class="password" placeholder="Password">
+            <div class="fullName">
+                <input type="text" class="name" placeholder="Name">
+                <input type="text" class="lastName" placeholder="Last name">
+            </div>
+            <div class="phoneNumber">
+                <h2>Enter your phone number</h2>
+                <div class="phoneInputs">
+                    <input type="tel" class="countryCode" placeholder="+43" maxlength="4">
+                    <input type="tel" class="phone" placeholder="1234567890" maxlength="10">
+                </div>
+            </div>
+            <div class="accountType">
+                <h2>Please, select the account type</h2>
+                <div class="radiobtns">
+                    <input type="radio" id="free" name="select-account" checked>
+                    <label forhtml="free">Free</label>
+                    <input type="radio" id="premium" name="select-account">
+                    <label forhtml="premium">Premium</label>
+                    <input type="radio" id="luxury" name="select-account">
+                    <label forhtml="luxury">Luxury</label>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="signIn">Already Have An Account? <a href="#"> Sign in</a></p>
+        </form>
+    </content>
+</body>
+</html>
